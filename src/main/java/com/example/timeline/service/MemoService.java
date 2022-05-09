@@ -19,6 +19,6 @@ public class MemoService {
                 () -> new NullPointerException("해당 아이디가 없습니다.")
         );
         memo.update(requestDto);
-        return id;
+        return memo.getId();
     }
 }
